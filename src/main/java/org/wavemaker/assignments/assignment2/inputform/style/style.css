@@ -1,23 +1,68 @@
 header {
-text-align : center;
+    text-align: center;
 }
+
+.formContainer {
+    border: 2px solid #1c6470;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
 .flexContainer {
-display : flex;
+    display: flex;
+    justify-content: space-between;
 }
-form {
-margin-left : 400px;
-margin-right : 500px;
+
+.textColor {
+    color: #29ded7;
 }
-#email {
-width : 100%;
-padding-right : 77%;
+
+.firstnameContainer, .lastNameContainer, .sourceIncome, .profileFlex > div {
+    width: 48%;
 }
-.genderField {
-padding-right : 50%;
+
+.emailContainer, .bioContainer {
+    margin-top: 15px;
 }
-.firstnameContainer {
-padding-right : 50%;
+
+#email, #bio {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
 }
-#age {
-padding-right : 50%;
+
+.genderField, .hobbiesField {
+    width: 48%;
+}
+
+#incomeRange {
+    width: 60%;
+}
+
+#submit {
+    float: right;
+    color: white;
+    background-color: #0c9e81;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .firstnameContainer, .lastNameContainer, .sourceIncome, .profileFlex > div, .genderField, .hobbiesField {
+        width: 100%;
+    }
+
+    .formContainer {
+        width: 90%;
+    }
 }

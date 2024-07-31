@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Input Form</title>
+    <title>Create Account</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -11,86 +12,78 @@
     <div class="formContainer">
         <div class="flexContainer">
             <div class="firstnameContainer">
-                <label for="firstname"> First Name<sup>*</sup><br></label>
-                <input id="firstname" type="text" name="firstName" required placeholder="enter your firstname">
+                <label class="textColor" for="firstname">First Name<sup>*</sup></label>
+                <input id="firstname" type="text" name="firstName" required placeholder="enter your first name">
             </div>
             <div class="lastNameContainer">
-                <label for="lastname">Last Name<sup>*</sup><br></label>
-                <input id="lastname" type="text" name="lastName" required placeholder="enter your lastname">
+                <label class="textColor" for="lastname">Last Name<sup>*</sup></label>
+                <input id="lastname" type="text" name="lastName" required placeholder="enter your last name">
             </div>
-            <br>
         </div>
-        <div>
-            <label for="email"> Email <sup>*</sup></label><br>
+        <div class="emailContainer">
+            <label class="textColor" for="email">Email<sup>*</sup></label>
             <input id="email" type="email" required placeholder="enter your email">
         </div>
-        <br>
-
         <div class="passwordDiv flexContainer">
             <div>
-                <label for="password"> Password<sup>*</sup><br></label>
+                <label class="textColor" for="password">Password<sup>*</sup></label>
                 <input id="password" type="password" name="password" required placeholder="enter your password">
             </div>
             <div>
-                <label for="confirmPassword"> Confirm Password<sup>*</sup><br></label>
-                <input id="confirmPassword" type="password" name="password" required
-                       placeholder="enter your password again">
+                <label class="textColor" for="confirmPassword">Confirm Password<sup>*</sup></label>
+                <input id="confirmPassword" type="password" name="password" required placeholder="enter your password again">
             </div>
         </div>
         <div class="genderHobbiesContainer flexContainer">
             <div class="genderField">
-                <label> Gender:</label><br>
-                <div class="genderFlex">
-                    <label for="male"></label><input type="radio" name="gender" id="male" value="male"/>Male
-                    <label for="female"></label><input type="radio" id="female" name="gender" value="female"/>Female
-                </div>
+                <label class="textColor">Gender</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
             </div>
             <div class="hobbiesField">
-                <label>Hobbies</label><br>
-                <div class="hobbiesFlex">
-                    <label for="music">Music</label>
-                    <input type="checkbox" id="music" name="music" value="music"/>
-                    <label for="sports">Sport</label><input type="checkbox" id="sports" name="sports" value="sports"/>
-                    <label for="travel">Travel</label><input type="checkbox" id="travel" name="travel" value="travel"/>
-                    <label for="movies">Movies</label><input type="checkbox" id="movies" name="movies" value="movies">
-                </div>
+                <label class="textColor">Hobbies</label>
+                <input type="checkbox" id="music" name="hobbies">
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="hobbies">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="travel" name="hobbies">
+                <label for="travel">Travel</label>
+                <input type="checkbox" id="movies" name="hobbies">
+                <label for="movies">Movies</label>
             </div>
         </div>
         <div class="incomeFlex flexContainer">
-            <div>
-                <label for="income">Source of Income</label>
+            <div class="sourceIncome">
+                <label class="textColor" for="income">Source of Income</label>
                 <select name="income" id="income">
                     <option value="employed">Employed</option>
                     <option value="unemployed">Unemployed</option>
                 </select>
             </div>
             <div>
-                <label for="incomeRange">Income</label> <br>
+                <label class="textColor" for="incomeRange">Income</label>
                 <input id="incomeRange" type="range" value="24" min="10" max="1000" oninput="this.nextElementSibling.value = this.value">
                 <output>10</output>K
             </div>
         </div>
         <div class="profileFlex flexContainer">
             <div>
-                <label for="profilePhoto">Upload Profile Picture</label>
+                <label class="textColor" for="profilePhoto">Upload Profile Picture</label>
                 <input type="file" id="profilePhoto" name="profilePhoto">
             </div>
             <div>
-                <label for="age">Age</label>
+                <label class="textColor" for="age">Age</label>
                 <input type="number" id="age" name="age">
             </div>
         </div>
         <div class="bioContainer">
-            <label for="bio">Bio</label><br>
+            <label class="textColor" for="bio">Bio</label>
             <textarea id="bio" rows="5" cols="70"></textarea>
         </div>
-        <label for="submit"></label>
-        <input id="submit" type="button" value="create">
+        <input id="submit" type="button" value="Create">
     </div>
 </form>
-
-<script>
-
-</script>
 </body>
 </html>
