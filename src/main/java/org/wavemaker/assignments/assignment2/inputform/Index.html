@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header><h2>Create Account</h2></header>
+<form>
+    <div class="formContainer">
+        <div class="flexContainer">
+            <div class="firstnameContainer">
+                <label for="firstname"> First Name<sup>*</sup><br></label>
+                <input id="firstname" type="text" name="firstName" required placeholder="enter your firstname">
+            </div>
+            <div class="lastNameContainer">
+                <label for="lastname">Last Name<sup>*</sup><br></label>
+                <input id="lastname" type="text" name="lastName" required placeholder="enter your lastname">
+            </div>
+            <br>
+        </div>
+        <div>
+            <label for="email"> Email <sup>*</sup></label><br>
+            <input id="email" type="email" required placeholder="enter your email">
+        </div>
+        <br>
+
+        <div class="passwordDiv flexContainer">
+            <div>
+                <label for="password"> Password<sup>*</sup><br></label>
+                <input id="password" type="password" name="password" required placeholder="enter your password">
+            </div>
+            <div>
+                <label for="confirmPassword"> Confirm Password<sup>*</sup><br></label>
+                <input id="confirmPassword" type="password" name="password" required
+                       placeholder="enter your password again">
+            </div>
+        </div>
+        <div class="genderHobbiesContainer flexContainer">
+            <div class="genderField">
+                <label> Gender:</label><br>
+                <div class="genderFlex">
+                    <label for="male"></label><input type="radio" name="gender" id="male" value="male"/>Male
+                    <label for="female"></label><input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="hobbiesField">
+                <label>Hobbies</label><br>
+                <div class="hobbiesFlex">
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="music" name="music" value="music"/>
+                    <label for="sports">Sport</label><input type="checkbox" id="sports" name="sports" value="sports"/>
+                    <label for="travel">Travel</label><input type="checkbox" id="travel" name="travel" value="travel"/>
+                    <label for="movies">Movies</label><input type="checkbox" id="movies" name="movies" value="movies">
+                </div>
+            </div>
+        </div>
+        <div class="incomeFlex flexContainer">
+            <div>
+                <label for="income">Source of Income</label>
+                <select name="income" id="income">
+                    <option value="employed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                </select>
+            </div>
+            <div>
+                <label for="incomeRange">Income</label>
+                <input id="incomeRange" type="range" min='0' max ='1000000' oninput="outputUpdate(value)">
+            </div>
+        </div>
+        <div class="profileFlex flexContainer">
+            <div>
+                <label for="profilePhoto">Upload Profile Picture</label>
+                <input type="file" id="profilePhoto" name="profilePhoto">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age">
+            </div>
+        </div>
+        <div class="bioContainer">
+            <label for="bio">Bio</label><br>
+            <textarea id="bio" rows="5" cols="70"></textarea>
+        </div>
+        <label for="submit"></label>
+        <input id="submit" type="button" value="create">
+    </div>
+</form>
+
+<script>
+
+</script>
+</body>
+</html>

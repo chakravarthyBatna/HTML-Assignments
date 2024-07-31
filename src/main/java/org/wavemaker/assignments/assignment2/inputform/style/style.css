@@ -1,0 +1,24 @@
+header {
+text-align : center;
+}
+.flexContainer {
+display : flex;
+text-align : justify-content;
+}
+form {
+margin-left : 400px;
+margin-right : 500px;
+}
+#email {
+width : 100%;
+padding-right : 77%;
+}
+.genderField {
+padding-right : 50%;
+}
+.firstnameContainer {
+padding-right : 50%;
+}
+#age {
+padding-right : 50%;
+}
