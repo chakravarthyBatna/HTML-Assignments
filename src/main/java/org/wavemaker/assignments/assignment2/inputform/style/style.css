@@ -3,7 +3,6 @@ text-align : center;
 }
 .flexContainer {
 display : flex;
-text-align : justify-content;
 }
 form {
 margin-left : 400px;

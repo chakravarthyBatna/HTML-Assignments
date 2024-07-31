@@ -65,8 +65,9 @@
                 </select>
             </div>
             <div>
-                <label for="incomeRange">Income</label>
-                <input id="incomeRange" type="range" min='0' max ='1000000' oninput="outputUpdate(value)">
+                <label for="incomeRange">Income</label> <br>
+                <input id="incomeRange" type="range" value="24" min="10" max="1000" oninput="this.nextElementSibling.value = this.value">
+                <output>10</output>K
             </div>
         </div>
         <div class="profileFlex flexContainer">
