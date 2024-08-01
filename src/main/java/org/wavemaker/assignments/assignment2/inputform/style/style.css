@@ -1,28 +1,32 @@
 header {
     text-align: center;
 }
-.inputBox1 {
-width : 250px;
-padding :5px;
+
+.inputBox1,
+.inputBox2,
+.confirmPasswordInputBox,
+.passwordInputBox {
+    margin-right: 95px;
+    width: 93%;
+    padding: 8px;
 }
-.inputBox2 {
-width : 260px;
-padding : 5px;
-   padding-right: 22px;
-}
-.genderHobbiesContainer {
-margin-top : 10px;
+
+.genderHobbiesContainer,
+.profileFlex {
+    margin-top: 10px;
 }
 .incomeRangeDiv {
-margin-top : 10px;
-}
-.confirmBoxDiv {
 margin-left : 10px;
 }
+.confirmBoxDiv {
+    margin-left: 10px;
+}
+
 .formContainer {
     border: 12px solid black;
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
+    max-width: 800px;
     padding: 20px;
     background-color: #f9f9f9;
     font-size: 18px;
@@ -30,74 +34,122 @@ margin-left : 10px;
 
 .flexContainer {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
 .flexHobbies {
-display : flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .textColor {
     color: #29ded7;
 }
 
-.firstnameContainer, .lastNameContainer, .sourceIncome {
-    width: 48%;
+.firstnameContainer,
+.lastNameContainer,
+.sourceIncome,
+.profileFlex > div,
+.genderField,
+.hobbiesField {
+    flex: 1 1 45%;
+    margin-bottom: 10px;
 }
 
-.emailContainer, .bioContainer {
+.emailContainer,
+.bioContainer {
+    width: 100%;
     margin-top: 15px;
+    margin-bottom : 20px;
+}
+.passwordDiv {
+margin-bottom : 20px;
 }
 
-#email, #bio, #age {
-    width: 96%;
-    padding: 8px;
-
-}
-
-.genderField, .hobbiesField {
-    width: 48%;
-}
+#email,
 #bio {
-padding-right : 10px;
+    width: 97%;
+    padding: 8px;
 }
 
+#age {
+    width: 95%;
+    padding: 8px;
+}
+
+.passwordInputBox,
+.confirmPasswordInputBox {
+    width: 95%;
+    padding: 8px;
+}
+
+.incomeFlex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.sourceBox,
 #incomeRange {
-    width: 80%;
-    padding-right: 50px;
-}
-#submit {
-background-color : green;
-}
-.buttonFlex {
-  display: flex;
-justify-content: flex-end;
-}
-.sourceBox {
-    padding: 5px;
-    padding-right: 159px;
-}
-.incomeRangeFlex {
-display : flex;
-flex-direction : column;
-}
-.rangeDivBox {
-display : flex;
-flex-direction : row;
+    width: 63%;
+    padding: 8px;
 }
 
-@media only screen and (max-width: 600px) {
-    .flexContainer {
+#submit {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonFlex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.incomeRangeFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.rangeDivBox {
+    display: flex;
+    align-items: center;
+}
+
+.profileFlex {
+    display: flex;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .flexContainer,
+    .genderHobbiesContainer,
+    .incomeFlex,
+    .profileFlex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .buttonFlex {
+        justify-content: center;
+    }
+
+    .genderSelectionDiv,
+    .flexHobbies {
         flex-direction: column;
     }
-    .buttonFlex {
-      display: flex;
-    justify-content: center;
-    }
-    .genderSelectionDiv {
-    display : flex;
-    flex-direction : column;
-    }
 
-    .firstnameContainer, .lastNameContainer, .sourceIncome, .profileFlex > div, .genderField, .hobbiesField {
+    .inputBox1,
+    .inputBox2,
+    .passwordInputBox,
+    .confirmPasswordInputBox,
+    .sourceBox,
+    #incomeRange {
         width: 100%;
     }
 
@@ -105,4 +157,3 @@ flex-direction : row;
         width: 90%;
     }
 }
-

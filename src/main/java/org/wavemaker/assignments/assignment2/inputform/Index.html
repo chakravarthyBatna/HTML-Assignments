@@ -28,17 +28,37 @@
                 <input class="emailBox" id="email" type="email" required placeholder="enter your email">
             </div>
             <div class="passwordDiv flexContainer">
-                <div>
+                <div class="passwordContainer">
                     <label class="textColor" for="password">Password<sup>*</sup></label>
-                    <input class="inputBox1" id="password" type="password" name="password" required
+                    <input class="passwordInputBox" id="password" type="password" name="password" required
                            placeholder="enter your password">
                 </div>
                 <div class="confirmBoxDiv">
                     <label class="textColor" for="confirmPassword">Confirm Password<sup>*</sup></label>
-                    <input class="inputBox2" id="confirmPassword" type="password" name="password" required
+                    <input class="confirmPasswordInputBox" id="confirmPassword" type="password" name="password" required
                            placeholder="enter your password again">
                 </div>
             </div>
+            <div class="incomeFlex">
+                <div class="sourceIncome">
+                    <label class="textColor" for="income">Source of Income</label><br>
+                    <select class="sourceBox" name="income" id="income">
+                        <option value="employed">Employed</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </div>
+                <div class="incomeRangeDiv">
+                    <div class="incomeRangeFlex">
+                        <label class="textColor" for="incomeRange">Income</label>
+                        <div class="rangeDivBox">
+                            <input id="incomeRange" type="range" value="20" min="10" max="100"
+                                   oninput="this.nextElementSibling.value = this.value">
+                            <output>20</output>K
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="genderHobbiesContainer flexContainer">
                 <div class="genderField">
                     <label class="textColor">Gender</label>
@@ -62,25 +82,6 @@
                         <label for="travel">Travel</label>
                         <input type="checkbox" id="movies" name="hobbies">
                         <label for="movies">Movies</label>
-                    </div>
-                </div>
-            </div>
-            <div class="incomeFlex flexContainer">
-                <div class="sourceIncome">
-                    <label class="textColor" for="income">Source of Income</label><br>
-                    <select class=" sourceBox" name="income" id="income">
-                        <option value="employed">Employed</option>
-                        <option value="unemployed">Unemployed</option>
-                    </select>
-                </div>
-                <div class="incomeRangeDiv">
-                    <div class="incomeRangeFlex">
-                        <label class="textColor" for="incomeRange">Income</label>
-                        <div class="rangeDivBox">
-                            <input id="incomeRange" type="range" value="20" min="10" max="100"
-                                   oninput="this.nextElementSibling.value = this.value">
-                            <output>20</output>K
-                        </div>
                     </div>
                 </div>
             </div>
