@@ -16,7 +16,8 @@ header {
     margin-top: 10px;
 }
 .incomeRangeDiv {
-margin-left : 10px;
+    width: 50%;
+    margin-left: 10px;
 }
 .confirmBoxDiv {
     margin-left: 10px;
@@ -30,6 +31,7 @@ margin-left : 10px;
     padding: 20px;
     background-color: #f9f9f9;
     font-size: 18px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .flexContainer {
@@ -50,7 +52,6 @@ margin-left : 10px;
 
 .firstnameContainer,
 .lastNameContainer,
-.sourceIncome,
 .profileFlex > div,
 .genderField,
 .hobbiesField {
@@ -65,7 +66,7 @@ margin-left : 10px;
     margin-bottom : 20px;
 }
 .passwordDiv {
-margin-bottom : 20px;
+    margin-bottom : 20px;
 }
 
 #email,
@@ -81,7 +82,7 @@ margin-bottom : 20px;
 
 .passwordInputBox,
 .confirmPasswordInputBox {
-    width: 95%;
+    width: 93%;
     padding: 8px;
 }
 
@@ -94,8 +95,11 @@ margin-bottom : 20px;
 
 .sourceBox,
 #incomeRange {
-    width: 63%;
+    width: 98%;
     padding: 8px;
+}
+.sourceIncome {
+    width: 50%;
 }
 
 #submit {
@@ -141,7 +145,7 @@ margin-bottom : 20px;
 
     .genderSelectionDiv,
     .flexHobbies {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .inputBox1,
@@ -155,5 +159,6 @@ margin-bottom : 20px;
 
     .formContainer {
         width: 90%;
+        padding: 10px;
     }
 }
