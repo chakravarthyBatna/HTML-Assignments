@@ -1,11 +1,28 @@
 header {
     text-align: center;
 }
-
+.inputBox1 {
+width : 250px;
+padding :5px;
+}
+.inputBox2 {
+width : 260px;
+padding : 5px;
+   padding-right: 22px;
+}
+.genderHobbiesContainer {
+margin-top : 10px;
+}
+.incomeRangeDiv {
+margin-top : 10px;
+}
+.confirmBoxDiv {
+margin-left : 10px;
+}
 .formContainer {
-    border: 2px solid #1c6470;
+    border: 12px solid black;
     margin: 0 auto;
-    width: 80%;
+    width: 50%;
     padding: 20px;
     background-color: #f9f9f9;
     font-size: 18px;
@@ -13,14 +30,16 @@ header {
 
 .flexContainer {
     display: flex;
-    justify-content: space-between;
+}
+.flexHobbies {
+display : flex;
 }
 
 .textColor {
     color: #29ded7;
 }
 
-.firstnameContainer, .lastNameContainer, .sourceIncome, .profileFlex > div {
+.firstnameContainer, .lastNameContainer, .sourceIncome {
     width: 48%;
 }
 
@@ -28,34 +47,54 @@ header {
     margin-top: 15px;
 }
 
-#email, #bio {
-    width: 100%;
+#email, #bio, #age {
+    width: 96%;
     padding: 8px;
-    box-sizing: border-box;
+
 }
 
 .genderField, .hobbiesField {
     width: 48%;
 }
-
-#incomeRange {
-    width: 60%;
+#bio {
+padding-right : 10px;
 }
 
+#incomeRange {
+    width: 80%;
+    padding-right: 50px;
+}
 #submit {
-    float: right;
-    color: white;
-    background-color: #0c9e81;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+background-color : green;
+}
+.buttonFlex {
+  display: flex;
+justify-content: flex-end;
+}
+.sourceBox {
+    padding: 5px;
+    padding-right: 159px;
+}
+.incomeRangeFlex {
+display : flex;
+flex-direction : column;
+}
+.rangeDivBox {
+display : flex;
+flex-direction : row;
 }
 
 @media only screen and (max-width: 600px) {
     .flexContainer {
         flex-direction: column;
+    }
+    .buttonFlex {
+      display: flex;
+    justify-content: center;
+    }
+    .genderSelectionDiv {
+    display : flex;
+    flex-direction : column;
     }
 
     .firstnameContainer, .lastNameContainer, .sourceIncome, .profileFlex > div, .genderField, .hobbiesField {
@@ -66,3 +105,4 @@ header {
         width: 90%;
     }
 }
+
